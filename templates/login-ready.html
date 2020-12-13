@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>go-guest-book</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Typ" content="text/html; charset=utf-8" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Go Guest Book 登录</h1>
+        </header>
+        <div>
+            <a href="index.asp">首页</a> |
+            <a href="../admin/logout.asp">登出</a>
+        </div>
+
+        <div>
+            <form id="form1" action="login-session.asp" method="post"
+                enctype="application/x-www-form-urlencoded">
+                <span>用户：</span>
+                <input type="text" name="username" value="admin" />
+                <br />
+                <span>密码：</span>
+                <input type="password" name="password" value="admin123"/><br />
+                <input type="submit" value="登录" /><br />
+            </form>
+        </div>
+
+
+        <footer>
+            <div>Copyright &copy; 2020</div>
+        </footer>
+
+    </body>
+</html>

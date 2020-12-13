@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>go-guest-book</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Typ" content="text/html; charset=utf-8" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Go Guest Book</h1>
+        </header>
+        <div>
+            <a href="/index.asp">首页</a> |
+            <a href="/logout-session.asp">登出</a>
+        </div>
+        <div>
+            <div>
+                <a href="./add-ready.asp">新建</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>标题</td>
+                        <td>时间</td>
+                        <td>操作</td>
+                    </tr>
+                </thead>
+                <tbody>
+                {{ range $key, $val := .}}
+                    <tr>
+                        <td>
+                            {{ $val.Id}}
+                        </td>
+                        <td>{{ $val.Title }}</td>
+                        <td> ... </td>
+                        <td>
+                            <a href="../admin/edit-ready.asp?id={{ $val.Id }}">编辑</a> &nbsp
+                            <a href="javascript:void(0)">删除</a>
+                        </td>
+                    </tr>
+                {{ else}}
+                    <tr>
+                        <td>没有任何数据！</td>
+                    </tr>
+                {{ end }}
+                </tbody>
+            </table>
+
+            </ul>
+        </div>
+        <div>
+            <a href="index.asp?page=1"> |&lt; </a> &nbsp;
+            <a href="index.asp?page=1"> &lt;&lt; </a>&nbsp;
+            <a href="#"> [1] </a> &nbsp;
+            <a href="index.asp?page=1"> &gt;&gt; </a> &nbsp;
+            <a href="index.asp?page=1"> &gt;| </a> &nbsp;
+        </div>
+
+        <footer>
+            <div>Copyright &copy; 2020</div>
+        </footer>
+
+    </body>
+</html>
