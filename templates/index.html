@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>go-guest-book</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Typ" content="text/html; charset=utf-8" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Go Guest Book</h1>
+        </header>
+        <div>
+            <a href="/index.asp">首页</a> |
+            <a href="login-ready.asp">登入</a>
+        </div>
+        <div>
+            <ul>
+            {{ range $key, $val := .}}
+                <li> <a href="article.asp?id={{ $val.Id }}">{{ $val.Title }} </a></li>
+            {{ else}}
+                <li>Nothing to show</li>
+            {{ end }}
+            </ul>
+        </div>
+        <div>
+            <a href="index.asp?page=1"> |&lt; </a> &nbsp;
+            <a href="index.asp?page=1"> &lt;&lt; </a>&nbsp;
+            <a href="#"> [1] </a> &nbsp;
+            <a href="index.asp?page=1"> &gt;&gt; </a> &nbsp;
+            <a href="index.asp?page=1"> &gt;| </a> &nbsp;
+        </div>
+
+        <footer>
+            <div>Copyright &copy; 2020</div>
+        </footer>
+
+    </body>
+</html>
