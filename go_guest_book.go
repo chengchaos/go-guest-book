@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	"github.com/chengchao/go-guest-book/dao"
 	"github.com/chengchao/go-guest-book/handlers"
 	"github.com/chengchao/go-guest-book/server"
 	"github.com/chengchao/go-guest-book/services"
@@ -12,7 +13,9 @@ func main() {
 
 	log.Println("it Works!")
 
-	as := services.NewArticleService()
+	ad := dao.NewArticleDao()
+	ud := dao.NewUserDao()
+	as := services.NewArticleService(ad, ud)
 
 	indexHandler := handlers.NewIndexHandler(as)
 	articleView := handlers.NewArticlViewHandler(as)

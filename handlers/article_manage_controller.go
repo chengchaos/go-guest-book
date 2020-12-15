@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"strconv"
+	"time"
 
 	"github.com/chengchao/go-guest-book/entities"
 	"github.com/chengchao/go-guest-book/services"
@@ -133,9 +134,9 @@ func (amc *ArticleManageController) EditSave() func(w http.ResponseWriter, r *ht
 		content := r.FormValue("content")
 
 		art := &entities.Article{
-			Title:   title,
-			Content: content,
-			// CreateAt: time.Now(),
+			Title:    title,
+			Content:  content,
+			CreateAt: time.Now(),
 		}
 		amc.as.EditSave(art)
 		w.Header().Set("Location", "../admin/articles.asp")
