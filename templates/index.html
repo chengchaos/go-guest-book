@@ -1,39 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-    <head>
-        <title>go-guest-book</title>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Typ" content="text/html; charset=utf-8" />
-    </head>
 
-    <body>
-        <header>
-            <h1>Go Guest Book</h1>
-        </header>
-        <div>
-            <a href="/index.asp">首页</a> |
-            <a href="login-ready.asp">登入</a>
-        </div>
-        <div>
-            <ul>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Signin Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+
+</head>
+
+<body>
+    <header>
+        <h1>Go Guest Book</h1>
+    </header>
+    <div>
+        <a href="/index.asp">首页</a> |
+        <a href="login-ready.asp">登入</a>
+    </div>
+    <div>
+        <ul>
             {{ range $key, $val := .}}
-                <li> <a href="article.asp?id={{ $val.Id }}">{{ $val.Title }} </a></li>
+            <li> <a href="article.asp?id={{ $val.Id }}">{{ $val.Title }} </a></li>
             {{ else}}
-                <li>Nothing to show</li>
+            <li>Nothing to show</li>
             {{ end }}
-            </ul>
-        </div>
-        <div>
-            <a href="index.asp?page=1"> |&lt; </a> &nbsp;
-            <a href="index.asp?page=1"> &lt;&lt; </a>&nbsp;
-            <a href="#"> [1] </a> &nbsp;
-            <a href="index.asp?page=1"> &gt;&gt; </a> &nbsp;
-            <a href="index.asp?page=1"> &gt;| </a> &nbsp;
-        </div>
+        </ul>
+    </div>
+    <div>
+        <a href="index.asp?page=1"> |&lt; </a> &nbsp;
+        <a href="index.asp?page=1"> &lt;&lt; </a>&nbsp;
+        <a href="#"> [1] </a> &nbsp;
+        <a href="index.asp?page=1"> &gt;&gt; </a> &nbsp;
+        <a href="index.asp?page=1"> &gt;| </a> &nbsp;
+    </div>
 
-        <footer>
-            <div>Copyright &copy; 2020</div>
-        </footer>
+    <footer>
+        <div>Copyright &copy; 2020</div>
+    </footer>
 
-    </body>
+</body>
+
 </html>
