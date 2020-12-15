@@ -42,9 +42,10 @@
         <a href="login-ready.asp">登入</a>
     </div>
     <div>
+        {{ . }}
         <ul>
             {{ range $key, $val := .}}
-            <li> <a href="article.asp?id={{ $val.Id }}">{{ $val.Title }} </a></li>
+            <li> <a href="article.asp?id={{ $val.ID }}">{{ $val.Title }} </a></li>
             {{ else}}
             <li>Nothing to show</li>
             {{ end }}

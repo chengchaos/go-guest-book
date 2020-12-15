@@ -195,6 +195,6 @@ func (impl *ArticleDaoImpl) ListArticles(page int) (articles []*entities.Article
 		articles = append(articles, art)
 	}
 
-	return
+	return articles
 
 }
