@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/chengchao/go-guest-book/entities"
-	"github.com/chengchao/go-guest-book/services"
+	"github.com/chengchaos/go-guest-book/entities"
+	"github.com/chengchaos/go-guest-book/services"
 )
 
 type ArticleManageController struct {

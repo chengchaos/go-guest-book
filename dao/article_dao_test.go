@@ -3,7 +3,7 @@ package dao
 import (
 	"testing"
 
-	"github.com/chengchao/go-guest-book/entities"
+	"github.com/chengchaos/go-guest-book/entities"
 )
 
 func TestGetArticleById(t *testing.T) {

@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/chengchao/go-guest-book/dao"
-	"github.com/chengchao/go-guest-book/entities"
+	"github.com/chengchaos/go-guest-book/dao"
+	"github.com/chengchaos/go-guest-book/entities"
 )
 
 type ArticleServiceImpl struct {

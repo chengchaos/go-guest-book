@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"log"
 
-	"github.com/chengchao/go-guest-book/entities"
+	"github.com/chengchaos/go-guest-book/entities"
 )
 
 type UserDao interface {

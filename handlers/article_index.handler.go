@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/chengchao/go-guest-book/services"
+	"github.com/chengchaos/go-guest-book/services"
 )
 
 type IndexHandler struct {

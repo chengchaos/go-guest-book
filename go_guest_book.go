@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	"github.com/chengchao/go-guest-book/dao"
-	"github.com/chengchao/go-guest-book/handlers"
-	"github.com/chengchao/go-guest-book/server"
-	"github.com/chengchao/go-guest-book/services"
+	"github.com/chengchaos/go-guest-book/dao"
+	"github.com/chengchaos/go-guest-book/handlers"
+	"github.com/chengchaos/go-guest-book/server"
+	"github.com/chengchaos/go-guest-book/services"
 )
 
 func main() {

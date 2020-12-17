@@ -1,4 +1,4 @@
-module github.com/chengchao/go-guest-book
+module github.com/chengchaos/go-guest-book
 
 go 1.15
 

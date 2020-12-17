@@ -3,7 +3,7 @@ package services
 import (
 	"testing"
 
-	"github.com/chengchao/go-guest-book/dao"
+	"github.com/chengchaos/go-guest-book/dao"
 )
 
 func TestGetArticleById(t *testing.T) {

@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/chengchao/go-guest-book/entities"
-	"github.com/chengchao/go-guest-book/helpers"
+	"github.com/chengchaos/go-guest-book/entities"
+	"github.com/chengchaos/go-guest-book/helpers"
 )
 
 type ArticleDao interface {
